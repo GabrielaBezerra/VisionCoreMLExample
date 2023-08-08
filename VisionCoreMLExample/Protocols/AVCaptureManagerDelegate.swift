@@ -8,6 +8,6 @@
 import Foundation
 import CoreMedia
 
-protocol AVCaptureManagerDelegate: class {
+protocol AVCaptureManagerDelegate: AnyObject {
     func didCapture(_ sampleBuffer: CMSampleBuffer)
 }

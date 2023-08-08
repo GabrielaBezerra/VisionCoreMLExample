@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol ModelSelectionViewDelegate: class {
+protocol ModelSelectionViewDelegate: AnyObject {
     func didSelect(model: ModelOption)
 }

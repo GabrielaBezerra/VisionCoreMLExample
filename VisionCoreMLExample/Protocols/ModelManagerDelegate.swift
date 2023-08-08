@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol ModelManagerDelegate: class {
+protocol ModelManagerDelegate: AnyObject {
     func justFound()
     func found(_ description: String, boundingBox: CGRect?)
 }

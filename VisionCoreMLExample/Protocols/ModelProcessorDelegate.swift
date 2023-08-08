@@ -8,7 +8,7 @@
 import Foundation
 import Vision
 
-protocol ModelProcessorDelegate: class {
+protocol ModelProcessorDelegate: AnyObject {
     func justProcessed()
     func didProcess(results: [ObservationResult<VNRecognizedObjectObservation>], description: String)
     func didProcess(results: [ObservationResult<VNClassificationObservation>], description: String)
